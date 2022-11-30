@@ -31,8 +31,8 @@ describe('Тестирование staya.dog', function () {
     it('Дойти до оформления заказа: пльзователь зарегистрирован', function () {
         cy.visit('https://staya.dog/');
         cy.get('.header-bottom__right--link').click();
-        cy.get('.auth-form > form > [type="email"]').type('Вставить верный логин');
-        cy.get('.auth-form > form > [type="password"]').type('Вставить верный пароль');
+        cy.get('.auth-form > form > [type="email"]').type('Вставить зарегистрированный логин');
+        cy.get('.auth-form > form > [type="password"]').type('Вставить зарегистрированный пароль');
         cy.get('.auth-form__submit').click();
         cy.get('.profile-orders__title');
         cy.get('.layout_profile > header > #stickyHeader > .header-bottom > .header-bottom--container > .header-bottom__nav > [href="/catalog"]').click();
