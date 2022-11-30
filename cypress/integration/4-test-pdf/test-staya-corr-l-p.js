@@ -28,7 +28,7 @@ describe('Тестирование staya.dog', function () {
         cy.get('.error-label')
     })
 
-    it('Дойти до оформления заказа: пльзователь зарегистрирован', function () {
+    it('Дойти до оформления заказа: пользователь зарегистрирован', function () {
         cy.visit('https://staya.dog/');
         cy.get('.header-bottom__right--link').click();
         cy.get('.auth-form > form > [type="email"]').type('Вставить зарегистрированный логин');
